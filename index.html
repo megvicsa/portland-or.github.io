@@ -196,6 +196,10 @@
         ];
         map.setMaxBounds(bounds);
 
+        // Create and add markers for start and end points
+        const startMarker = new mapboxgl.Marker({ color: '#3887be' }).setLngLat([-100.662323, 45.523751]).addTo(map);
+        const endMarker = new mapboxgl.Marker({ color: '#f02' }).setLngLat([-100.663584, 45.523751]).addTo(map);
+
         // Variables to store start and end points
         //let startPoint = null;
         //let endPoint = null;
