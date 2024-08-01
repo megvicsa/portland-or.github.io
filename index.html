@@ -198,10 +198,6 @@
         ];
         map.setMaxBounds(bounds);
 
-        // Create and add markers for start and end points
-        const startMarker = new mapboxgl.Marker({ color: '#3887be' }).setLngLat([-122.662323, 45.523751]).addTo(map);
-        const endMarker = new mapboxgl.Marker({ color: '#f02' }).setLngLat([-122.663584, 45.523751]).addTo(map);
-
         // Variables to store start and end points
         let startPoint = null;
         let endPoint = null;
@@ -311,6 +307,7 @@
         ];
 
         // Fixed points for emoji markers, charging stations, and POIs
+        /*
         const fixedPoint1 = {
             lat: chargingStations[0].coordinates[1],
             lng: chargingStations[0].coordinates[0],
@@ -321,6 +318,7 @@
             lng: chargingStations[1].coordinates[0],
             emoji: '📍'
         };
+        */
 
          /*
         // Path to the CSV file
@@ -447,6 +445,7 @@
 
 
         // Function to add an emoji marker at a specific point on the map
+        /*
         function addEmojiMarker(point) {
             if (window.emojiMarker) {
                 window.emojiMarker.remove();
@@ -488,6 +487,7 @@
             }
             //logAction(`Nearby ${poi_type}s added for ${stationName}`);
         }
+            */
 
         let flag = 1;
 
@@ -840,6 +840,7 @@
         }
 
         // Function to add points of interest (POIs) to the map
+        /*
         async function addPOIs(searchTerm, emoji, latitude, longitude, station_name) {
             //logAction(`Adding POIs for ${station_name} - ${searchTerm}`);
 
@@ -872,6 +873,7 @@
                 poiMarkers.push({ marker, coordinates: [lng, lat], logMessage: `Clicked within buffer zone of POI: ${feature.text}` });
             }
         }
+            */
 
         // Define sources for start and end points
         // SET START AND END POINTS BELOW
@@ -887,7 +889,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [ , ] //FILL OUT
+                            coordinates: [-122.43287203240324,45.500056816635805] //FILL OUT
                         }
                     }
                 ]
@@ -906,7 +908,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [ , ] // FILL OUT
+                            coordinates: [-122.78665142520987,45.4849323833362] // FILL OUT
                         }
                     }
                 ]
