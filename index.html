@@ -188,13 +188,13 @@
             container: 'map',
             style: 'mapbox://styles/mapbox/navigation-day-v1',
             center: [-122.560942, 45.514963], //PLACE CENTER
-            zoom: 10 //SET ZOOM
+            zoom: 8 //SET ZOOM
         });
 
         // Define geographical bounds for the map
         const bounds = [
-            [-123.160942, 45.314963], //SET BOUNDS
-            [-121.960942, 45.714963]  //SET BOUNDS
+            [-123.460942, 45.214963], //SET BOUNDS
+            [-121.760942, 45.814963]  //SET BOUNDS
         ];
         map.setMaxBounds(bounds);
 
@@ -208,7 +208,7 @@
         const instructions = [
             { title: "Current Time", info: "9:33 AM" },
             { title: "Address of Origin", info: "385 NW Miller Ave, Gresham, OR 97030" },
-            { title: "Address of Destination", info: "10700 SW Beaverton Hillsdale Hwy, Beaverton, OR 97005" },
+            { title: "Address of Destination", info: "12680 SW Walnut St, Tigard, OR 97223" },
             { title: "Distance of Destination", info: "0" },
             { title: "Estimated Time to Destination", info: "0" },
             { title: "State of Charge of Battery", info: "10% Charge" },
@@ -908,7 +908,7 @@
                         },
                         geometry: {
                             type: 'Point',
-                            coordinates: [-122.78665142520987,45.4849323833362] // FILL OUT
+                            coordinates: [-122.80685902576522,45.4247954998217] // FILL OUT
                         }
                     }
                 ]
