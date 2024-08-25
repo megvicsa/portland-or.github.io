@@ -211,9 +211,9 @@
             { title: "Address of Destination", info: "12680 SW Walnut St, Tigard, OR 97223." },
             { title: "Distance of Destination", info: "0" },
             { title: "Estimated Time to Destination", info: "0" },
-            { title: "State of Charge of Battery", info: "10% Charge." },
-            { title: "Range of Current Battery", info: "30 Minutes." },
-            { title: "Estimated Drive-distance with Current Charge", info: "22 Miles." },
+            { title: "State of Charge of Battery", info: "10% charge." },
+            { title: "Range of Current Battery", info: "30 minutes." },
+            { title: "Estimated Drive Distance with Current Charge", info: "22 miles." },
             { title: "Type of Chargin Socket", info: "J1772." },
             { title: "kW Needed to Fully Charge Your Car", info: "54 kW." }
         ];
@@ -246,20 +246,20 @@
                         { type: 'CCS/SAE', value: '9' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '1 available' },
-                        { type: 'CCS/SAE', value: '5 available' }
+                        { type: 'J1772', value: '1' },
+                        { type: 'CCS/SAE', value: '5' }
                     ],   
 
                 energySource: '74% Grid, 26% Renewable',
 
                 chargingFee: '$0.46',
                 chargingFeeRate: 'per kWh',
-                parkingFee: 'free',
+                parkingFee: '$0.00',
                 parkingFeeRate: 'for any amount of time',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.05 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.1 mile away',
-                sportsClothes: 'No <br><br> There are no sports or clothing stores in walking distance.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.05 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.1 mile away',
+                sportsClothes: 'No. <br><br> There are no sports or clothing stores in walking distance.',
                 
                 rating: '★ ★ ★ ★ ★',
                 ratingNum: '399'
@@ -286,20 +286,20 @@
                         { type: 'J1772', value: '540' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '2 available' }
+                        { type: 'J1772', value: '2' }
                     ],        
 
                 energySource: '48% Grid, 52% Renewable',
 
                 chargingFee: '$0.00',
-                chargingFeeRate: 'per kWh',
+                chargingFeeRate: 'per any amount of power',
 
-                parkingFee: 'free',
+                parkingFee: '$0.00',
                 parkingFeeRate: 'for any amount of time',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.2 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.4 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 1.3 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.2 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.4 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 1.3 miles away.',
                 
                 rating: '★ ★ ★ ★ ✰',  
                 ratingNum: '49'
@@ -587,7 +587,7 @@
             content = `<p style="font-size: 16px; padding: 5px;">${infoContent}</p>`;
 
             if (infoType === 'rating') {
-                content = `<p style="font-size: 16px; padding: 5px;"><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews</p>`;
+                content = `<p style="font-size: 16px; padding: 5px;"><b>Rating:</b><br><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews.</p>`;
                 console.log('Rating clicked');
             }
 
